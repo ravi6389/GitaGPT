@@ -100,7 +100,7 @@ def run_llm(query: str, chat_history: List[Dict[str, Any]] = []):
    
     if(st.session_state['loaded_db'] == ''):
     
-        loaded_db = FAISS.load_local('index.faiss',\
+        loaded_db = FAISS.load_local('becki_fast',\
     embeddings, allow_dangerous_deserialization=True)
         st.session_state['loaded_db'] = loaded_db
     
