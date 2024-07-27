@@ -97,22 +97,20 @@ def run_llm(query: str, chat_history: List[Dict[str, Any]] = []):
    
 
 
-    #db.save_local('C:\\Users\\RSPRASAD\\OneDrive - Danaher\\Learning\\Hackathon\\AzureOpenAI\\vector store\\becki_fast')
+   
     if(st.session_state['loaded_db'] == ''):
     
-        loaded_db = FAISS.load_local('C:\\Users\\RSPRASAD\\OneDrive - Danaher\\Learning\\Hackathon\\AzureOpenAI\\vector store\\becki_fast',\
+        loaded_db = FAISS.load_local('index.faiss',\
     embeddings, allow_dangerous_deserialization=True)
         st.session_state['loaded_db'] = loaded_db
     
     else:
         loaded_db = st.session_state['loaded_db']
     
-    st.write(st.session_state['loaded_db'])
-    st.write(loaded_db)
-    st.write(st.session_state['llm'])
+    
     if(st.session_state['llm'] ==''):
        
-        llm = Ollama(model= 'llama3', temperature = 0.8)
+        llm = Ollama(model= 'phi', temperature = 0.8)
 
         
         st.session_state['llm'] = llm
