@@ -131,7 +131,7 @@ def run_llm(query: str, chat_history: List[Dict[str, Any]] = []):
         retriever=history_aware_retriever, combine_docs_chain=combine_docs_chain
     )
 
-    result = retrival_chain.invoke(input={"input": query})#, "chat_history": chat_history})
+    result = retrival_chain.invoke(input={"input": query, "chat_history": chat_history})
  
     return result
 
