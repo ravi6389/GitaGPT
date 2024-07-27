@@ -1,7 +1,7 @@
 import os
 
 from langchain.document_loaders import TextLoader
-from pypdf import PdfReader
+
 from langchain import HuggingFaceHub
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceInstructEmbeddings
@@ -94,10 +94,10 @@ def run_llm(query: str, chat_history: List[Dict[str, Any]] = []):
    
 
 
-    #db.save_local('C:\\Users\\RSPRASAD\\OneDrive - Danaher\\Learning\\Hackathon\\AzureOpenAI\\vector store\\becki_fast')
+  
     if(st.session_state['loaded_db'] == ''):
     
-        loaded_db = FAISS.load_local('C:\\Users\\RSPRASAD\\OneDrive - Danaher\\Learning\\Hackathon\\AzureOpenAI\\vector store\\becki_fast',\
+        loaded_db = FAISS.load_local('becki_fast',\
     embeddings, allow_dangerous_deserialization=True)
         st.session_state['loaded_db'] = loaded_db
     
