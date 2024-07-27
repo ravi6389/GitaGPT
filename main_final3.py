@@ -2,7 +2,7 @@ import os
 
 # from dotenv import load_dotenv
 from langchain.document_loaders import TextLoader
-from pypdf import PdfReader
+# from pypdf import PdfReader
 from langchain import HuggingFaceHub
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceInstructEmbeddings
