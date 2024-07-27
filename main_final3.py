@@ -37,14 +37,12 @@ from langchain.chains import RetrievalQA, ConversationalRetrievalChain
 
 from langchain.chains.retrieval import create_retrieval_chain
 
-from langchain.document_loaders import CSVLoader
 
 from langchain.indexes import VectorstoreIndexCreator
 
 from sentence_transformers import SentenceTransformer, util
 from langchain.embeddings import HuggingFaceEmbeddings
-from langchain_community.embeddings import FastEmbedEmbeddings
-from langchain_community.vectorstores import Chroma
+
 
 from langchain_community.llms import Ollama
 
