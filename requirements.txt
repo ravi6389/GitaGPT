@@ -2,5 +2,9 @@ protobuf==5.27.2
 langchain
 streamlit
 langchain_community
-streamlit_chat
+pypdf
+langchain_openai
+streamlit-chat
+faiss-cpu
+langchainhub
 
