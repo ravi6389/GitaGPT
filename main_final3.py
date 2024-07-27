@@ -112,7 +112,7 @@ def run_llm(query: str, chat_history: List[Dict[str, Any]] = []):
 
         
         st.session_state['llm'] = llm
-        st.write(st.session_state['llm'])
+        
     else:
         llm =  st.session_state['llm']
 
