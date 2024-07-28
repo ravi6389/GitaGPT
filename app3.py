@@ -17,7 +17,7 @@ if 'db' not in st.session_state:
 if 'loaded_db' not in st.session_state:
     st.session_state['loaded_db'] = '' 
 
-st.image("gita2.jpg")
+st.image("gita4.jpg")
 st.header("Gita GPT - Ask Gita related questions")
 
 
