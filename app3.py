@@ -22,6 +22,8 @@ with cent_co:
     st.image("gita4.jpg")
     
 st.header("Gita GPT - Ask Gita related questions")
+st.subheader("By Ravi Shankar Prasad")
+st.subheader("https://www.linkedin.com/in/ravi-shankar-prasad-371825101/")
 
 
 prompt = st.text_input("Prompt", placeholder="Enter your prompt here..")
