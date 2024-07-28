@@ -108,7 +108,7 @@ def run_llm(query: str, chat_history: List[Dict[str, Any]] = []):
     if(st.session_state['llm'] ==''):
        
         llm = HuggingFaceHub(repo_id="declare-lab/flan-alpaca-large",\
-        huggingfacehub_api_token = st.secrets['token'], model_kwargs={"temperature":0, "max_length":512})
+        huggingfacehub_api_token = st.secrets['token'], model_kwargs={"temperature":0.8, "max_length":512})
 
         
         st.session_state['llm'] = llm
